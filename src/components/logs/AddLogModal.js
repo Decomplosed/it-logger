@@ -5,6 +5,10 @@ const AddLogModal = props => {
   const [attention, setAttention] = useState(false)
   const [tech, setTech] = useState('')
 
+  const onSubmit = () => {
+    console.log(message, tech, attention)
+  }
+
   return (
     <div
       id='add-log-modal'
