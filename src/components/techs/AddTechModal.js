@@ -18,7 +18,7 @@ const AddTechModal = props => {
 
   return (
     <div
-      id='add-log-modal'
+      id='add-tech-modal'
       className='modal'
       style={modalStyle}
     >
