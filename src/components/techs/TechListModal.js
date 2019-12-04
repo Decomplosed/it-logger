@@ -22,13 +22,15 @@ const TechListModal = () => {
 
   return (
     <div id='tech-list-modal' className='modal'>
-      <h4>Technician List</h4>
-      <ul className='collection'>
-        {!loading && techs.map(tech => (
-          <li>{tech.firstName}</li>
-        ))}
-      </ul>
-    </div >
+      <div className="modal-content">
+        <h4>Technicians List</h4>
+        <ul className='collection'>
+          {!loading && techs.map(tech => (
+            <li className="collection-item">{tech.firstName}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
   )
 }
 
