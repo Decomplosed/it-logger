@@ -40,6 +40,23 @@ const AddLogModal = props => {
               <option value="Sara Wilson">Sara Wilson</option>
             </select>
           </div>
+
+          <div className="row">
+            <div className="input-field">
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    className='filled-in'
+                    checked={attention}
+                    value={attention}
+                    onChange={e => setAttention(!attention)}
+                  />
+                  <span>Needs Attention</span>
+                </label>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
