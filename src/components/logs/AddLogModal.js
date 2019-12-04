@@ -11,6 +11,10 @@ const AddLogModal = props => {
       M.toast({ html: 'Please enter a message and tech' })
     } else {
       console.log(message, tech, attention)
+
+      setMessage('')
+      setTech('')
+      setAttention(false)
     }
   }
 
