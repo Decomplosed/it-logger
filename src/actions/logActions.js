@@ -5,5 +5,11 @@ import {
 } from './types'
 
 export const getLogs = () => {
-  
+
+}
+
+export const setLoading = () => {
+  return {
+    type: SET_LOADING
+  }
 }
