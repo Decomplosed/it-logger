@@ -20,17 +20,21 @@ const App = () => {
     M.AutoInit()
   })
 
-  return <Fragment>
-    <SearchBar />
-    <div className='container'>
-      <AddBtn />
-      <AddLogModal />
-      <EditLogModal />
-      <AddTechModal />
-      <TechListModal />
-      <Logs />
-    </div>
-  </Fragment>
+  return (
+    <Provider store={store}>
+      <Fragment>
+        <SearchBar />
+        <div className='container'>
+          <AddBtn />
+          <AddLogModal />
+          <EditLogModal />
+          <AddTechModal />
+          <TechListModal />
+          <Logs />
+        </div>
+      </Fragment>
+    </Provider>
+  )
 }
 
 export default App;
