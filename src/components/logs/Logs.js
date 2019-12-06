@@ -8,7 +8,7 @@ const Logs = () => {
   const [logs, setLogs] = useState([])
   const [loading, setLoading] = useState(false)
 
-  useEffect(() => {
+  useEffect(({ log: { logs, loading } }) => {
     getLogs()
     //eslint-disable-next-line
   }, [])
