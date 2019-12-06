@@ -1,7 +1,8 @@
 import {
   GET_LOGS,
   SET_LOADING,
-  LOGS_ERROR
+  LOGS_ERROR,
+  ADD_LOG
 } from '../actions/types'
 
 const initialState = {
