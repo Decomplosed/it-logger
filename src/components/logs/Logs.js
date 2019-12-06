@@ -3,16 +3,16 @@ import { connect } from 'react-redux'
 import LogItem from './LogItem'
 import Preloader from '../layout/Preloader'
 import PropTypes from 'prop-types'
+import { getLogs } from '../../actions/logActions'
 
+const Logs = ({ log: { logs, loading } }) => {
 
-const Logs = () => {
-
-  useEffect(({ log: { logs, loading } }) => {
+  useEffect(() => {
     getLogs()
     //eslint-disable-next-line
   }, [])
 
-  if (loading) {
+  if (loading || logs === null) {
     return <Preloader />
   }
 
@@ -36,4 +36,4 @@ const mapStateToProps = state => ({
   log: state.log
 })
 
-export default connect(mapStateToProps)(Logs)
+export default connect(mapStateToProps, { getLogs })(Logs)
