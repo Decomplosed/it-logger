@@ -23,7 +23,7 @@ export default (state = initialState, action) => {
     case ADD_LOG:
       return {
         ...state,
-        log: [...state.logs, action.payload],
+        logs: [...state.logs, action.payload],
         loading: false
       }
     case SET_LOADING:
