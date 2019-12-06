@@ -7,9 +7,6 @@ import PropTypes from 'prop-types'
 
 const Logs = () => {
 
-  const [logs, setLogs] = useState([])
-  const [loading, setLoading] = useState(false)
-
   useEffect(({ log: { logs, loading } }) => {
     getLogs()
     //eslint-disable-next-line
