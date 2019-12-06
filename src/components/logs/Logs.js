@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 import LogItem from './LogItem'
 import Preloader from '../layout/Preloader'
+import PropTypes from 'prop-types'
+
 
 const Logs = () => {
 
@@ -36,6 +38,10 @@ const Logs = () => {
         (logs.map(log => <LogItem log={log} key={log.id} />))}
     </ul>
   )
+}
+
+Logs.propTypes = {
+  log: PropTypes.object.isRequired
 }
 
 const mapStateToProps = state => ({
