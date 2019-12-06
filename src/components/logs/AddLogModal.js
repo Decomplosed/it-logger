@@ -21,7 +21,7 @@ const AddLogModal = ({ addLog }) => {
 
       addLog(newLog)
 
-      M.toast({ html: `Kog added by ${tech}` })
+      M.toast({ html: `Log added by ${tech}` })
 
       setMessage('')
       setTech('')
