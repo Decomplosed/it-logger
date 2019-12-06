@@ -34,7 +34,7 @@ Logs.propTypes = {
 }
 
 const mapStateToProps = state => ({
-  log: state.log,
+  log: state.log
 })
 
 export default connect(
