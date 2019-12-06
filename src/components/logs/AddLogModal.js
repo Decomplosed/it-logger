@@ -13,7 +13,15 @@ const AddLogModal = ({ addLog }) => {
     if (message === '' || tech === '') {
       M.toast({ html: 'Please enter a message and tech' })
     } else {
-      console.log(message, tech, attention)
+      const newLog = {
+        message,
+        attention,
+        tech, date: new Date()
+      }
+
+      addLog(newLog)
+
+      M.toast({ html: `Kog added by ${tech}` })
 
       setMessage('')
       setTech('')
