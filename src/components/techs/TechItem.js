@@ -3,11 +3,11 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { deleteTech } from '../../actions/techActions'
 
-const TechItem = ({ tech, deleteTech }) => {
+const TechItem = ({ tech: { id, firstName, lastName }, deleteTech }) => {
   return (
     <li className='collection-item'>
       <div>
-        {tech.firstName} {tech.lastName}
+        {firstName} {lastName}
         <a href='#!' className='secondary-content' onClick={() => deleteTech(id)}>
           <i className="material-icons grey-text">delete</i>
         </a>
