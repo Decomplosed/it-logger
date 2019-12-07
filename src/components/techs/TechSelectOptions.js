@@ -15,4 +15,6 @@ TechSelectOptions.propTypes = {
 
 }
 
-export default TechSelectOptions
+
+
+export default connect(mapStateToProps, { getTechs })(TechSelectOptions)
