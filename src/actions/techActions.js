@@ -5,3 +5,9 @@ import {
   SET_LOADING,
   TECHS_ERROR
 } from './types'
+
+export const setLoading = () => {
+  return {
+    type: SET_LOADING
+  }
+}
