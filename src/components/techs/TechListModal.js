@@ -31,7 +31,7 @@ TechListModal.propTypes = {
   getTechs: PropTypes.func.isRequired
 }
 
-mapStateToProps = state => ({
+const mapStateToProps = state => ({
   tech: state.tech
 })
 
