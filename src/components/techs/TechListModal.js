@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import TechItem from './TechItem'
 import { getTechs } from '../../actions/techActions'
 
-const TechListModal = ({ getTechs }) => {
+const TechListModal = ({ getTechs, tech: { techs, loading } }) => {
 
   useEffect(() => {
     getTechs()
