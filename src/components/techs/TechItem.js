@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { deleteTech } from '../../actions/techActions'
 
-const TechItem = ({ tech }) => {
+const TechItem = ({ tech, deleteTech }) => {
   return (
     <li className='collection-item'>
       <div>
