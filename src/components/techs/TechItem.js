@@ -21,4 +21,4 @@ TechItem.propTypes = {
   deleteTech: PropTypes.func.isRequired
 }
 
-export default TechItem
+export default connect(null, { deleteTech })(TechItem)
